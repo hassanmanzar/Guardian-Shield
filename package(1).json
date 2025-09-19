@@ -1,0 +1,27 @@
+{
+  "name": "misinformation-detector",
+  "version": "1.0.0",
+  "description": "A web application to detect misinformation in news articles.",
+  "main": "server.js",
+  "scripts": {
+    "start": "netlify dev",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "misinformation",
+    "fact-checking",
+    "news",
+    "analysis"
+  ],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "dependencies": {
+    "bcrypt": "^5.1.1",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^5.1.0",
+    "jsonwebtoken": "^9.0.2",
+    "pg": "^8.11.3"
+  }
+}

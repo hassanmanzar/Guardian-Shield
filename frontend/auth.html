@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Authentication - Misinformation Detector</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="/">Misinformation Detector</a>
+            <div class="collapse navbar-collapse">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link" href="/">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/analyzer">Analyzer</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/reporter">Reporter</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/feedback">Feedback</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="/auth">Login/Register</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container mt-5">
+        <h1>Login or Register</h1>
+
+        <div class="auth-container row">
+            <div class="login-form col-md-6">
+                <h2>Login</h2>
+                <form id="login-form">
+                    <div class="mb-3">
+                        <label for="login-username" class="form-label">Username</label>
+                        <input type="text" class="form-control" id="login-username" placeholder="Username" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="login-password" class="form-label">Password</label>
+                        <input type="password" class="form-control" id="login-password" placeholder="Password" required>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Login</button>
+                </form>
+            </div>
+
+            <div class="register-form col-md-6">
+                <h2>Register</h2>
+                <form id="register-form">
+                    <div class="mb-3">
+                        <label for="register-username" class="form-label">Username</label>
+                        <input type="text" class="form-control" id="register-username" placeholder="Username" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="register-password" class="form-label">Password</label>
+                        <input type="password" class="form-control" id="register-password" placeholder="Password" required>
+                    </div>
+                    <button type="submit" class="btn btn-success">Register</button>
+                </form>
+            </div>
+        </div>
+
+        <div class="user-info mt-5" style="display: none;">
+            <p>Logged in as: <span id="username"></span></p>
+            <button id="logout-btn" class="btn btn-danger">Logout</button>
+        </div>
+    </div>
+
+    <script src="/js/auth.js" type="module"></script>
+</body>
+</html>
