@@ -1,0 +1,10 @@
+[build]
+  command = "echo 'No build command'"
+  publish = "frontend"
+  functions = "netlify/functions"
+
+[dev]
+  command = "npm start"
+  targetPort = 8081
+  publish = "frontend"
+  functions = "netlify/functions"
